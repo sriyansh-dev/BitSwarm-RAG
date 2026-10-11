@@ -30,7 +30,7 @@ Each team member indexes their own documents on their own machine, packs the res
 | **Eight-step mount gate** | Hashes, signature, trust, embedding compatibility, schema, vector sample re-embedding, expiry and quotas are all checked before import. |
 | **Swarm transfer** | Shards download from several seeders in parallel in 256 KiB pieces. |
 | **Hybrid retrieval** | Dense (BGE-small) plus BM25, fused with Reciprocal Rank Fusion. Hybrid scored Hit@1 0.867 against 0.767 for dense and 0.783 for BM25 on the project's 60-question set. |
-| **Cited answers and refusal** | Citations are validated against retrieved chunks. Off-topic questions are refused. |
+| **Cited answers and refusal** | Citations are validated against retrieved chunks. Questions the shared knowledge cannot answer are refused using a calibrated threshold. |
 | **Ephemeral sharing** | Shards can carry an expiry and are unmounted and deleted automatically. |
 | **Tested by attack** | An adversarial suite builds hostile shards and checks each is rejected at the correct step. |
 
@@ -123,9 +123,7 @@ A hash proves integrity, not authorship. Because peer-supplied text is passed to
 - an adversarial test suite that checks each hostile shard is rejected at the correct step.
 
 **3. How can the retrieval design be validated?**
-Design claims are backed by measurement. The repository includes an evaluation harness, a typed 60-question benchmark with deliberate hard-negative documents, and a calibration command for the refusal threshold.
-
-The system is designed to be both measured and attacked. The sections that follow report what held up and what did not.
+Design claims are backed by measurement. The repository includes an evaluation harness, a typed 60-question evaluation set with deliberate hard-negative documents, and a calibration command for the refusal threshold.
 
 The project is built to be measured and attacked, not only demonstrated. The sections below report what held up and what did not.
 
@@ -745,8 +743,8 @@ Issues and pull requests are welcome. Before opening a pull request:
 1. Use Python 3.12 and install with `uv pip install -e ".[bge,torrent,dev]"`.
 2. Run `pytest -q` and `bitswarm attack`. Both must pass.
 3. If you change the mount gate, add or update a scenario in `attack.py` so the change is covered by the adversarial suite.
-4. Report security issues privately to the maintainer rather than in a public issue.
+4. Report security issues through the repository's private vulnerability reporting (Security tab) rather than in a public issue.
 
 ## 22. License
 
-Add a `LICENSE` file to the repository root (for example MIT or Apache-2.0) and state it here.
+Released under the MIT License. See the [LICENSE](LICENSE) file.
