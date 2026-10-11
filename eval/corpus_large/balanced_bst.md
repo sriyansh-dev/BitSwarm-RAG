@@ -1,0 +1,3 @@
+# Balanced Binary Search Trees
+
+A binary search tree keeps smaller keys on the left and larger on the right, giving logarithmic search when balanced, but inserting sorted data produces a chain with linear cost. An AVL tree stores a balance factor, the height difference of the two subtrees, and keeps it within minus one to plus one. When an insert breaks this, rotations restore balance: a single left or right rotation, or a double left-right or right-left rotation. Red black trees use colour rules and fewer rotations, so they are faster for write heavy loads. Java TreeMap is a red black tree. In order traversal of a search tree visits keys in sorted order.

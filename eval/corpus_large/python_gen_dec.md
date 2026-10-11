@@ -1,0 +1,3 @@
+# Python Generators and Decorators
+
+A generator function uses yield to produce values lazily, pausing between items and keeping its local state, so it can stream a huge file without loading it into memory. Calling it returns an iterator; next() resumes it until StopIteration. Generator expressions look like list comprehensions with parentheses. A decorator is a function that takes a function and returns a wrapped one, applied with @name syntax above a definition, commonly for logging, timing and caching. functools.wraps preserves the original function's name and docstring. Decorators can take arguments by adding another level of nesting. Context managers using with and contextlib.contextmanager rely on a generator that yields once.

@@ -1,0 +1,440 @@
+{
+ "answerable": [
+  {
+   "q": "What does ssthresh mean?",
+   "expected_docs": [
+    "TCP Congestion Control"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does HTTP status 429 mean?",
+   "expected_docs": [
+    "REST API Design"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is state D in ps output?",
+   "expected_docs": [
+    "Linux Process States"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does @Autowired do?",
+   "expected_docs": [
+    "Spring Boot and Dependency Injection"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is a phantom read?",
+   "expected_docs": [
+    "SQL Transactions and ACID"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is the avalanche effect?",
+   "expected_docs": [
+    "Cryptographic Hash Functions"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What are cgroups used for?",
+   "expected_docs": [
+    "Docker and Containers"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does functools.wraps preserve?",
+   "expected_docs": [
+    "Python Generators and Decorators"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is AIMD?",
+   "expected_docs": [
+    "TCP Congestion Control"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is a double hashing probe?",
+   "expected_docs": [
+    "Hash Tables"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is the balance factor in an AVL tree?",
+   "expected_docs": [
+    "Balanced Binary Search Trees"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is git reflog?",
+   "expected_docs": [
+    "Git Internals"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does volatile guarantee in Java?",
+   "expected_docs": [
+    "Java Multithreading"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is a composite index on (a, b)?",
+   "expected_docs": [
+    "Database Indexing with B+ Trees"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is HMAC?",
+   "expected_docs": [
+    "Cryptographic Hash Functions"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is ed25519?",
+   "expected_docs": [
+    "Public Key Cryptography"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does SIGKILL do?",
+   "expected_docs": [
+    "Linux Process States"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is a clustered index?",
+   "expected_docs": [
+    "Database Indexing with B+ Trees"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What does weight decay do?",
+   "expected_docs": [
+    "Gradient Descent and Overfitting"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "What is Belady's anomaly?",
+   "expected_docs": [
+    "Memory Management and Paging"
+   ],
+   "type": "lexical"
+  },
+  {
+   "q": "Why does a program that already finished still appear in the process list?",
+   "expected_docs": [
+    "Linux Process States"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How does the internet avoid everyone flooding the same link at once?",
+   "expected_docs": [
+    "TCP Congestion Control"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can I find a value by its name in near constant time?",
+   "expected_docs": [
+    "Hash Tables"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Why does inserting already sorted numbers into a search tree make it slow?",
+   "expected_docs": [
+    "Balanced Binary Search Trees"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How do I make sure a money transfer either fully succeeds or leaves nothing changed?",
+   "expected_docs": [
+    "SQL Transactions and ACID"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Why can I find one row among millions with only a handful of disk reads?",
+   "expected_docs": [
+    "Database Indexing with B+ Trees"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can someone prove a message came from me without revealing my secret?",
+   "expected_docs": [
+    "Public Key Cryptography"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can I check that a downloaded file was not corrupted or modified?",
+   "expected_docs": [
+    "Cryptographic Hash Functions"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How does the framework create objects for me so I never call new?",
+   "expected_docs": [
+    "Spring Boot and Dependency Injection"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How do I stop two threads from corrupting a shared counter?",
+   "expected_docs": [
+    "Java Multithreading",
+    "Process Synchronization"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can I read a gigantic file one item at a time without running out of memory?",
+   "expected_docs": [
+    "Python Generators and Decorators"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "My model scores great on its training data but badly on new data. Why?",
+   "expected_docs": [
+    "Gradient Descent and Overfitting"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How should a web service tell the caller that the thing they asked for does not exist?",
+   "expected_docs": [
+    "REST API Design"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can I run many isolated apps on one machine without separate operating systems?",
+   "expected_docs": [
+    "Docker and Containers"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How does a version control tool keep a full history without duplicating unchanged files?",
+   "expected_docs": [
+    "Git Internals"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Why does my computer slow to a crawl when it has too little RAM for the running programs?",
+   "expected_docs": [
+    "Memory Management and Paging"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Which strategy lets short tasks finish quickly while long ones still make progress?",
+   "expected_docs": [
+    "CPU Scheduling"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can two machines agree on a shared secret over an untrusted channel?",
+   "expected_docs": [
+    "Public Key Cryptography"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How can the same web request be safely repeated without side effects?",
+   "expected_docs": [
+    "REST API Design"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "What keeps a database safe if the power fails right after I save?",
+   "expected_docs": [
+    "SQL Transactions and ACID"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How do saved files survive a sudden crash without a lengthy repair scan?",
+   "expected_docs": [
+    "File Systems"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Why do two programs each waiting for the other's resource freeze forever?",
+   "expected_docs": [
+    "Deadlocks",
+    "Java Multithreading"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How do I wrap a function to add timing without editing its body?",
+   "expected_docs": [
+    "Python Generators and Decorators"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "What happens to a child task whose parent exits first?",
+   "expected_docs": [
+    "Linux Process States"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "Why must training steps be scaled down when the loss jumps around wildly?",
+   "expected_docs": [
+    "Gradient Descent and Overfitting"
+   ],
+   "type": "paraphrase"
+  },
+  {
+   "q": "How does TCP slow start differ from congestion avoidance?",
+   "expected_docs": [
+    "TCP Congestion Control"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "Why is SHA-256 alone not suitable for storing passwords?",
+   "expected_docs": [
+    "Cryptographic Hash Functions"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "What is the difference between merge and rebase in Git?",
+   "expected_docs": [
+    "Git Internals"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How do Docker image layers speed up rebuilds?",
+   "expected_docs": [
+    "Docker and Containers"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How does rehashing keep hash table lookups fast?",
+   "expected_docs": [
+    "Hash Tables"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "Which isolation level prevents non repeatable reads?",
+   "expected_docs": [
+    "SQL Transactions and ACID"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How do range queries benefit from linked B+ tree leaves?",
+   "expected_docs": [
+    "Database Indexing with B+ Trees"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "Why prefer constructor injection over field injection in Spring?",
+   "expected_docs": [
+    "Spring Boot and Dependency Injection"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How does a thread pool reduce the cost of creating threads?",
+   "expected_docs": [
+    "Java Multithreading"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How does a digital signature differ from encrypting with a public key?",
+   "expected_docs": [
+    "Public Key Cryptography"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "Why does dropout help with overfitting?",
+   "expected_docs": [
+    "Gradient Descent and Overfitting"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "What are idempotent HTTP methods?",
+   "expected_docs": [
+    "REST API Design"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "How does open addressing handle collisions?",
+   "expected_docs": [
+    "Hash Tables"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "What does a red black tree do differently from an AVL tree?",
+   "expected_docs": [
+    "Balanced Binary Search Trees"
+   ],
+   "type": "mixed"
+  },
+  {
+   "q": "Why is the round robin time quantum important?",
+   "expected_docs": [
+    "CPU Scheduling"
+   ],
+   "type": "mixed"
+  }
+ ],
+ "unanswerable": [
+  "What is the capital of Australia?",
+  "How do I bake sourdough bread?",
+  "Who won the 2018 football world cup?",
+  "How do I treat a sprained ankle?",
+  "What is the plot of Hamlet?",
+  "What is the boiling point of mercury?",
+  "How do I change a flat bicycle tyre?",
+  "Who painted the Mona Lisa?",
+  "What is the best way to learn guitar?",
+  "How many calories are in a banana?",
+  "How do vaccines train the immune system?",
+  "What is the population of Brazil?"
+ ]
+}

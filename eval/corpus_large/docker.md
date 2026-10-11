@@ -1,0 +1,3 @@
+# Docker and Containers
+
+A container is an ordinary Linux process isolated by kernel features, not a virtual machine with its own kernel. Namespaces give each container its own view of process IDs, network, mounts and hostname, while cgroups limit CPU, memory and I/O. A Docker image is a stack of read only layers built from a Dockerfile; each instruction such as RUN or COPY adds a layer that is cached, so put rarely changing steps first. Running an image adds a thin writable layer. Volumes keep data outside the container lifecycle. Containers start in milliseconds and share the host kernel, so they are lighter than VMs but isolate less strongly. docker compose describes multi container applications in a YAML file.

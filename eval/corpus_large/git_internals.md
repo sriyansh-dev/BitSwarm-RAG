@@ -1,0 +1,3 @@
+# Git Internals
+
+Git is a content addressed database. Every blob, tree and commit is stored under an object id, the SHA-1 hash of its content, so identical content is stored once. A commit points to a tree snapshot and to its parent commits, forming a directed acyclic graph. A branch is just a movable pointer to a commit, and HEAD points to the current branch. Merge creates a commit with two parents and keeps history as it happened; rebase replays your commits on top of another base, giving a linear history but rewriting commit ids, so never rebase shared branches. The staging area, the index, holds what the next commit will contain. git reflog records where HEAD has been and can recover lost commits.

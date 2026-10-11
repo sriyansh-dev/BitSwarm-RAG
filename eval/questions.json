@@ -1,0 +1,105 @@
+{
+  "answerable": [
+    {
+      "q": "Which scheduling algorithm minimises average waiting time?",
+      "expected_docs": [
+        "CPU Scheduling"
+      ]
+    },
+    {
+      "q": "How does aging stop starvation in priority scheduling?",
+      "expected_docs": [
+        "CPU Scheduling"
+      ]
+    },
+    {
+      "q": "What is the convoy effect?",
+      "expected_docs": [
+        "CPU Scheduling"
+      ]
+    },
+    {
+      "q": "What happens if the round robin time quantum is too small?",
+      "expected_docs": [
+        "CPU Scheduling"
+      ]
+    },
+    {
+      "q": "What is a TLB and why does it help?",
+      "expected_docs": [
+        "Memory Management and Paging"
+      ]
+    },
+    {
+      "q": "Explain thrashing and how the working set model prevents it",
+      "expected_docs": [
+        "Memory Management and Paging"
+      ]
+    },
+    {
+      "q": "What is Belady's anomaly?",
+      "expected_docs": [
+        "Memory Management and Paging"
+      ]
+    },
+    {
+      "q": "List the four Coffman conditions for deadlock",
+      "expected_docs": [
+        "Deadlocks"
+      ]
+    },
+    {
+      "q": "How does the banker's algorithm check for a safe state?",
+      "expected_docs": [
+        "Deadlocks"
+      ]
+    },
+    {
+      "q": "What are the three allocation methods for files?",
+      "expected_docs": [
+        "File Systems"
+      ]
+    },
+    {
+      "q": "Why does journaling make crash recovery fast?",
+      "expected_docs": [
+        "File Systems"
+      ]
+    },
+    {
+      "q": "How do semaphores solve the producer consumer problem?",
+      "expected_docs": [
+        "Process Synchronization"
+      ]
+    },
+    {
+      "q": "How can dining philosophers avoid deadlock?",
+      "expected_docs": [
+        "Process Synchronization"
+      ]
+    },
+    {
+      "q": "Difference between TCP and UDP",
+      "expected_docs": [
+        "Computer Networks Basics"
+      ]
+    },
+    {
+      "q": "Why does multicast with TTL 1 stay on the local network?",
+      "expected_docs": [
+        "Computer Networks Basics"
+      ]
+    },
+    {
+      "q": "What are the layers of the OSI model?",
+      "expected_docs": [
+        "Computer Networks Basics"
+      ]
+    }
+  ],
+  "unanswerable": [
+    "What is the capital of Australia?",
+    "How do I bake sourdough bread?",
+    "Who won the 2018 football world cup?"
+  ]
+}

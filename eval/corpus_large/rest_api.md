@@ -1,0 +1,3 @@
+# REST API Design
+
+A REST API exposes resources at URLs and uses HTTP methods as verbs: GET reads, POST creates, PUT replaces, PATCH partially updates, DELETE removes. GET, PUT and DELETE are idempotent, so repeating them leaves the same state, while POST is not. Status codes tell the client what happened: 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 429 Too Many Requests and 500 Internal Server Error. Servers are stateless, so each request carries its own authentication token. Use plural nouns, version the API, paginate large collections, and return consistent JSON error bodies. Rate limiting protects the service.

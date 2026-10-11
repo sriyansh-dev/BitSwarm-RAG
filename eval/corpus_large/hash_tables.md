@@ -1,0 +1,3 @@
+# Hash Tables
+
+A hash table stores key value pairs by applying a hash function to the key to pick a bucket index. Two keys landing in one bucket is a collision. Separate chaining keeps a linked list per bucket. Open addressing probes other slots: linear probing steps one slot at a time, quadratic probing steps by squares, and double hashing uses a second hash function. The load factor is items divided by buckets; when it passes about 0.75 the table is rehashed into a larger array. Average lookup, insert and delete take constant time, but a bad hash function or adversarial keys degrade chaining to linear time. Python dict and Java HashMap are hash tables.

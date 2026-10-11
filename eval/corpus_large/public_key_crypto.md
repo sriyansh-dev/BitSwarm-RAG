@@ -1,0 +1,3 @@
+# Public Key Cryptography
+
+Asymmetric cryptography uses a key pair: a public key shared openly and a private key kept secret. Encrypting with the public key lets only the private key holder read the message. A digital signature reverses the roles: the signer hashes the message and signs with the private key, and anyone verifies with the public key, proving who authored it and that it was not altered. RSA relies on the difficulty of factoring large integers; elliptic curve schemes such as ed25519 give similar security with much smaller keys and fast signing. Because asymmetric operations are slow, systems use Diffie Hellman or RSA only to agree on a symmetric session key, then switch to AES. A certificate authority vouches that a public key belongs to a named owner.

@@ -1,0 +1,3 @@
+# Java Multithreading
+
+A Java program can run several threads sharing one heap. When two threads update shared state without coordination a race condition corrupts it. The synchronized keyword gives a thread exclusive access to a monitor lock on an object or method. The volatile keyword guarantees visibility of a variable across threads but not atomicity of compound actions like count++. java.util.concurrent offers ReentrantLock, AtomicInteger and concurrent collections. Creating a thread per task is expensive, so an ExecutorService thread pool reuses a fixed set of workers; submit returns a Future for the result. wait and notify let threads signal each other inside synchronized blocks. Two threads locking resources in opposite order can deadlock.

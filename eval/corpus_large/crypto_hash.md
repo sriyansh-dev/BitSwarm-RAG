@@ -1,0 +1,3 @@
+# Cryptographic Hash Functions
+
+A cryptographic hash such as SHA-256 maps any input to a fixed size digest. It must be preimage resistant, meaning you cannot recover the input from the digest, second preimage resistant, and collision resistant, meaning finding two inputs with the same digest is infeasible. Changing a single bit of the input changes about half the digest bits, the avalanche effect. Hashes verify file integrity: publish the digest and a downloader recomputes it. A plain hash does not prove who made the file; an HMAC mixes in a shared secret key to authenticate messages. Passwords should be stored with a slow salted function such as bcrypt or Argon2, never plain SHA-256. MD5 and SHA-1 are broken for collisions.

@@ -1,0 +1,3 @@
+# Gradient Descent and Overfitting
+
+Gradient descent trains a model by repeatedly moving its parameters opposite to the gradient of the loss, scaled by a learning rate. Too large a learning rate makes the loss diverge; too small makes training crawl. Stochastic and mini batch variants estimate the gradient from a few examples, which is faster and adds helpful noise. Overfitting happens when a model memorises training data and performs worse on unseen data: training loss falls while validation loss rises. Remedies include more data, L2 regularisation or weight decay, dropout, early stopping and a simpler model. A train, validation and test split guards against fooling yourself. Underfitting is the opposite: the model is too simple to capture the pattern.

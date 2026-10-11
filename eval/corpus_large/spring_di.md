@@ -1,0 +1,3 @@
+# Spring Boot and Dependency Injection
+
+Spring is built on inversion of control: instead of a class creating its collaborators, the IoC container creates objects called beans and injects them. Annotate a class with @Component, @Service or @Repository and component scanning registers it as a bean. Constructor injection is preferred, and @Autowired marks an injection point. Beans are singletons by default; @Scope changes that. Spring Boot adds auto configuration: it inspects the classpath and creates sensible default beans, and starters such as spring-boot-starter-web bundle dependencies. @SpringBootApplication combines @Configuration, @EnableAutoConfiguration and @ComponentScan. Properties live in application.properties or application.yml, and @Value reads them.

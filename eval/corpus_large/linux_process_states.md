@@ -1,0 +1,3 @@
+# Linux Process States
+
+A process in Linux moves between running, sleeping, stopped and zombie states. fork() creates a child by copying the parent; exec() replaces the child's program image. When a child exits it becomes a zombie until the parent calls wait() to collect its exit status; the entry stays in the process table, consuming a PID but no memory otherwise. If a parent dies first, the child becomes an orphan and is adopted by init (PID 1), which reaps it. Uninterruptible sleep, shown as state D in ps, happens during disk I/O and cannot be interrupted by signals. SIGTERM asks a process to exit politely; SIGKILL cannot be caught or ignored.

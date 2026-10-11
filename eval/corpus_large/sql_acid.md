@@ -1,0 +1,3 @@
+# SQL Transactions and ACID
+
+A transaction groups statements into one unit that either fully happens or not at all. ACID stands for atomicity, consistency, isolation and durability. Atomicity is implemented with an undo log and rollback; durability with a write ahead log flushed before commit returns. Isolation levels trade safety for speed: read uncommitted allows a dirty read of another transaction's uncommitted data; read committed prevents that but permits non repeatable reads; repeatable read stops those; serializable also prevents phantom reads, where new rows appear in a repeated range query. Higher isolation uses more locking or multiversion snapshots. A deadlock between transactions is resolved by aborting a victim.

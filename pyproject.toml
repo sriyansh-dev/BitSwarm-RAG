@@ -1,0 +1,18 @@
+[project]
+name = "bitswarm-rag"
+version = "0.1.0"
+description = "Serverless, signed, content-addressed knowledge sharing for small offline teams"
+requires-python = ">=3.11"
+dependencies = ["pynacl", "pyarrow", "numpy", "fastapi", "uvicorn", "pypdf"]
+[project.optional-dependencies]
+bge = ["fastembed"]
+torrent = ["libtorrent"]
+llm = ["llama-cpp-python"]
+dev = ["pytest", "httpx"]
+[project.scripts]
+bitswarm = "bitswarm.cli:main"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["src"]

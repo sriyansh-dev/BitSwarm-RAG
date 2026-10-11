@@ -1,0 +1,3 @@
+# TCP Congestion Control
+
+TCP limits how fast a sender transmits using a congestion window, cwnd. In slow start cwnd doubles every round trip time until it reaches ssthresh, the slow start threshold. After that congestion avoidance grows cwnd by one segment per round trip, which is the additive increase of AIMD. When a loss is detected, multiplicative decrease halves cwnd. Three duplicate ACKs trigger fast retransmit, resending the missing segment without waiting for a timeout. A retransmission timeout is more severe: cwnd drops to one segment and slow start restarts. These rules let many senders share a bottleneck link fairly without a central coordinator.

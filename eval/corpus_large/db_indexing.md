@@ -1,0 +1,3 @@
+# Database Indexing with B+ Trees
+
+An index lets a database find rows without scanning the whole table. Most relational databases use B+ trees: a shallow, wide tree where each node holds hundreds of keys, so a lookup among millions of rows takes three or four disk reads. Internal nodes only route; all records or row pointers sit in the leaves, and the leaves are linked as a list, which makes range queries such as BETWEEN fast. A clustered index stores the table rows in key order, so a table has only one; secondary indexes point back to the primary key. Every index speeds reads but slows inserts and updates and uses disk space. A composite index on (a, b) helps queries filtering on a, or on a and b, but not on b alone.
